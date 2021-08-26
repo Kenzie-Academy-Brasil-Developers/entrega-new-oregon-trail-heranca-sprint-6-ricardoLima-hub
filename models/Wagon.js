@@ -1,24 +1,9 @@
 class Wagon {
     constructor (capacity) {
-        this._capacity = capacity;
-        this._passengers = [];
+        this.capacity = capacity;
+        this.passengers = [];
     }
 
-    get capacity () {
-        return this._capacity
-    }
-
-    get passengers () {
-        return this._passengers
-    }
-
-    set capacity (value) {
-        this._capacity = value
-    }
-
-    set passengers (value) {
-        this._passengers = value
-    }
     getAvailableSeatCount() {
        if (this.passengers.length === 0) {
            return this.capacity
@@ -36,10 +21,10 @@ class Wagon {
     }
 
     shouldQuarantine () {
-        let personSick = false;
+        let personSick = "false";
         this.passengers.forEach((element) => {
-          if (element.isHealthy !== true) {
-            personSick = true;
+          if (element.isHealthy !== "true") {
+            personSick = "true";
           }
         });
         return personSick;

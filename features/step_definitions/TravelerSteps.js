@@ -14,7 +14,7 @@ Given('ele sempre começa a viagem com {int} refeição', function (int) {
 });
 
 Given('ele sempre começa a viagem saudável.', function () {
-    viajante.isHealthy = true;
+    viajante.isHealthy = "true";
 });
 
 /** WHEN */
@@ -38,9 +38,9 @@ Then('a quantidade de refeições deve ser igual a {int}', function (int) {
 });
 
 Then('o Traveler não ficará doente', function () {
-    assert.strictEqual(viajante.isHealthy, true)
+    assert.strictEqual(viajante.isHealthy, "true")
 });
 
 Then('o Traveler ficará doente', function () {
-    assert.strictEqual(viajante.isHealthy, false)
+    assert.strictEqual(viajante.isHealthy, "false")
 });

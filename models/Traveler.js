@@ -1,31 +1,23 @@
 class Traveler {
     constructor (name, isHealthy = "true", food = 1) {
-        this._name = name;
+        this.name = name;
         this._amountFood = Number(food);
         this._isHealthy = isHealthy;
     }
 
-    get amountFood () {
+    get amountFood() {
         return this._amountFood
     }
 
-    get name () {
-        return this._name
-    }
-
-    get health () {
-        return this._isHealthy
-    }
-
-    set amountFood (value) {
+    set amountFood(value) {
         this._amountFood = value
     }
 
-    set name(value){
-        this._name = value
+    get isHealthy() {
+        return this._isHealthy
     }
 
-    set health (value) {
+    set isHealthy(value) {
         this._isHealthy = value
     }
 
@@ -37,7 +29,7 @@ class Traveler {
         if (this.amountFood > 0) {
             return this.amountFood--;
         } else {
-            return this.isHealthy = false;
+            return this.isHealthy = "false";
         }
     }
 }
