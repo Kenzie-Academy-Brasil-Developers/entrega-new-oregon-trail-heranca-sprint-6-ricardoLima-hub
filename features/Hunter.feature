@@ -12,7 +12,7 @@ Funcionalidade: Caçador
 
     Cenário: Caçou para conseguir mais refeições
         Quando o Caçador sair para caçar 1 vezes
-        Então a quantidade de refeições deve ser igual a 7.
+        Então o Caçador ficará com 7 refeições
 
     Cenário: Comeu e seguiu saudável
         Quando o Caçador parar para comer 1 vezes
@@ -30,7 +30,8 @@ Funcionalidade: Caçador
         Então o Caçador ficará com 8 refeições
         E o Caçador não ficará doente.
 
-    Cenário: Tranfere comida para um Traveler
-        Quando um Traveler solicitar 1 refeição ao Caçador
-        E o número de refeições do Caçador for igual a 2
-        Então o Caçador entrega 1 refeição para o Traveler.
+    Cenário: Transfere comida para um Traveler
+        Quando o Caçador sair para caçar 1 vezes
+        E o Caçador entregar 1 refeição para um Traveler
+        Então o Caçador ficará com 6 refeições
+        E o Traveler terá 2 refeições.
