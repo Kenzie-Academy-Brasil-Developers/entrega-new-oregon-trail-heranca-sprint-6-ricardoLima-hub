@@ -30,6 +30,12 @@ Funcionalidade: Caçador
         Então o Caçador ficará com 8 refeições
         E o Caçador não ficará doente.
 
+    Cenário: Não possui comida para transferir ao Traveler
+        Quando o Caçador tiver 0 refeições
+        E o Caçador entregar 1 refeição para um Traveler
+        Então o Caçador ficará com 0 refeições
+        E o Traveler terá 1 refeições.
+
     Cenário: Transfere comida para um Traveler
         Quando o Caçador sair para caçar 1 vezes
         E o Caçador entregar 1 refeição para um Traveler

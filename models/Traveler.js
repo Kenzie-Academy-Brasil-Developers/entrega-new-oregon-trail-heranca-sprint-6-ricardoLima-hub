@@ -1,24 +1,8 @@
 class Traveler {
     constructor (name, isHealthy = "true", food = 1) {
         this.name = name;
-        this._amountFood = Number(food);
-        this._isHealthy = isHealthy;
-    }
-
-    get amountFood() {
-        return this._amountFood
-    }
-
-    set amountFood(value) {
-        this._amountFood = value
-    }
-
-    get isHealthy() {
-        return this._isHealthy
-    }
-
-    set isHealthy(value) {
-        this._isHealthy = value
+        this.amountFood = Number(food);
+        this.isHealthy = isHealthy;
     }
 
     hunt() {

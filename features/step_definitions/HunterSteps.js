@@ -35,6 +35,10 @@ When('o Caçador entregar {int} refeição para um Traveler', function (int) {
     cacador.giveFood(viajante, int)
     });
 
+When('o Caçador tiver {int} refeições', function (int) {
+    cacador.amountFood = int
+    });
+
 Then('o Caçador ficará com {int} refeições', function (int) {
     assert.strictEqual(cacador.amountFood, int)
  });
@@ -50,11 +54,3 @@ Then('o Caçador ficará doente.', function () {
 Then('o Traveler terá {int} refeições.', function (int) {
     assert.strictEqual(viajante.amountFood, int)
 });
-
-// When('um Traveler solicitar {int} refeição ao Hunter', function (int) {
-
-// });
-
-// When('o número de refeições do Hunter for igual a {int}', function (int) {
-
-// });

@@ -13,7 +13,6 @@ class Hunter extends Traveler {
     eat () {
         if (this.amountFood >= 2) {
             this.amountFood -= 2
-            this.isHealthy = true
         } else {
             this.amountFood = 0
             this.isHealthy = false
